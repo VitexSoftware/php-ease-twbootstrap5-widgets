@@ -71,7 +71,7 @@ class Toggle extends \Ease\Html\CheckboxTag
     /**
      * Include required assets in page
      */
-    public function finalize()
+    public function finalize(): void
     {
         \Ease\Part::jQueryze();
         \Ease\TWB5\Part::twBootstrapize();
