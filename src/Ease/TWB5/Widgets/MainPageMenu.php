@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * This file is part of the TWB5Widgets package
  *
- * https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi
+ * https://github.com/VitexSoftware/php-ease-twbootstrap5-widgets
  *
  * (c) Vítězslav Dvořák <http://vitexsoftware.com>
  *

@@ -15,7 +15,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-core/tests/src/Ease",
             "Test\\Ease\\TWB5\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB5"
         }
     },
@@ -26,9 +26,9 @@
     "require-dev": {
         "phpunit/phpunit": "*",
         "phpstan/phpstan": "*",
-        "friendsofphp/php-cs-fixer": "^3.61",
-        "ergebnis/composer-normalize": "^2.43",
-        "ergebnis/php-cs-fixer-config": "^6.34"
+        "friendsofphp/php-cs-fixer": "^3.71",
+        "ergebnis/composer-normalize": "^2.45",
+        "ergebnis/php-cs-fixer-config": "^6.45"
     },
     "type": "library",
     "homepage": "https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi",
