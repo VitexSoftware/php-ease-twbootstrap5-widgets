@@ -31,4 +31,4 @@ require __DIR__.'/../vendor/autoload.php';
 \define('DB_TYPE', 'pgsql');
 
 \Ease\Shared::user(new Ease\Anonym());
-\Ease\Shared::webPage(new Ease\TWB5\WebPage());
+Ease\TWB5\WebPage::singleton();

@@ -15,12 +15,15 @@ declare(strict_types=1);
 
 namespace Ease\TWB5\Widgets;
 
-class MainPageMenu extends \Ease\TWB5\Row
+use Ease\TWB5\Row;
+use \Ease\Html\DivTag;
+
+class MainPageMenu extends Row
 {
     /**
      * Sem se přidávají položky.
      */
-    public \Ease\Html\DivTag $row;
+    public DivTag $row;
 
     /**
      * MainPage Menu.
@@ -49,7 +52,7 @@ class MainPageMenu extends \Ease\TWB5\Row
      *
      * @return \Ease\Html\ATag
      */
-    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = [])
+    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = []): Row
     {
         $icon = new \Ease\Html\ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
         // $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);

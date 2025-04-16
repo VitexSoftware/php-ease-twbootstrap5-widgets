@@ -30,3 +30,4 @@ debian/php-vitexsoftware-ease-bootstrap5-widgets
 /debian/php-vitexsoftware-ease-bootstrap5-widgets.substvars
 /debian/php-vitexsoftware-ease-bootstrap5-widgets.debhelper.log
 /.build/
+/.phpunit.result.cache
