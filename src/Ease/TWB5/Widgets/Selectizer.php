@@ -25,10 +25,10 @@ trait Selectizer
     /**
      * Selectize.js for Ease Input/Select widgets.
      *
-     * @param array $settings see https://github.com/selectize/selectize.js/blob/master/docs/api.md
-     * @param array $values   [value=>label,value=>label,...]
+     * @param array<string,string> $settings see https://github.com/selectize/selectize.js/blob/master/docs/api.md
+     * @param array<string,string> $values   [value=>label,value=>label,...]
      */
-    public function selectize($settings = [], $values = []): void
+    public function selectize(array $settings = [], array $values = []): self
     {
         if (empty($this->getTagID())) {
             $this->setTagID();
@@ -52,5 +52,7 @@ EOD);
 
         $this->includeJavaScript('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js');
         $this->includeCss('https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap5.css');
+
+        return $this;
     }
 }

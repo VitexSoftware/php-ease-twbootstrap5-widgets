@@ -20,7 +20,7 @@ class Toggle extends \Ease\Html\CheckboxTag
     /**
      * Properties holder.
      *
-     * @var array<string, string|bool>
+     * @var array<string, bool|string>
      */
     public array $properties = [];
 

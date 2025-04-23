@@ -15,8 +15,8 @@ declare(strict_types=1);
 
 namespace Ease\TWB5\Widgets;
 
+use Ease\Html\DivTag;
 use Ease\TWB5\Row;
-use \Ease\Html\DivTag;
 
 class MainPageMenu extends Row
 {
