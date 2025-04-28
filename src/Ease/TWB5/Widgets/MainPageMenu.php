@@ -15,7 +15,14 @@ declare(strict_types=1);
 
 namespace Ease\TWB5\Widgets;
 
+use Ease\Html\ATag;
 use Ease\Html\DivTag;
+use Ease\Html\H5Tag;
+use Ease\Html\ImgTag;
+use Ease\Html\PTag;
+use Ease\TWB5\Card;
+use Ease\TWB5\Col;
+use Ease\TWB5\LinkButton;
 use Ease\TWB5\Row;
 
 class MainPageMenu extends Row
@@ -50,17 +57,17 @@ class MainPageMenu extends Row
      * @param null|mixed $buttonText
      * @param array      $properties  for Card
      *
-     * @return \Ease\Html\ATag
+     * @return ATag
      */
-    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = []): Row
+    public function addMenuItem($title, $url, $image, $description, $buttonText = null, $properties = []): Col
     {
-        $icon = new \Ease\Html\ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
+        $icon = new ImgTag($image, $title, ['alt' => $title, 'class' => 'card-img-top']);
         // $cardHeader = new \Ease\Html\DivTag($title, ['class' => 'card-header']);
-        $cardBody = new \Ease\Html\DivTag(new \Ease\Html\H5Tag($title), ['class' => 'card-body']);
-        $cardBody->addItem(new \Ease\Html\PTag($description, ['class' => 'card-text']));
-        $cardBody->addItem(new \Ease\TWB5\LinkButton($url, empty($buttonText) ? _('Visit') : $buttonText, 'primary btn-block'));
-        $menuCard = new \Ease\TWB5\Card([$icon, $cardBody], $properties);
+        $cardBody = new DivTag(new H5Tag($title), ['class' => 'card-body']);
+        $cardBody->addItem(new PTag($description, ['class' => 'card-text']));
+        $cardBody->addItem(new LinkButton($url, empty($buttonText) ? _('Visit') : $buttonText, 'primary btn-block'));
+        $menuCard = new Card([$icon, $cardBody], $properties);
 
-        return $this->addItem(new \Ease\TWB5\Col(3, $menuCard));
+        return $this->addItem(new Col(3, $menuCard));
     }
 }
