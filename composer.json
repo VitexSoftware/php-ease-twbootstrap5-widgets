@@ -21,7 +21,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "vitexsoftware/ease-twbootstrap5": "^1.0"
+        "vitexsoftware/ease-twbootstrap5": "^1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
