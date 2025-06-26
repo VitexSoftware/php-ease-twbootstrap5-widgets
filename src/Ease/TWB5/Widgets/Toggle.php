@@ -27,12 +27,12 @@ class Toggle extends \Ease\Html\CheckboxTag
     /**
      * StyleSheet location.
      */
-    public string $css = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/css/bootstrap5-toggle.min.css';
+    public string $css = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.2/css/bootstrap5-toggle.min.css';
 
     /**
      * JavaScript location.
      */
-    public string $js = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/js/bootstrap5-toggle.jquery.min.js';
+    public string $js = 'https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.2/js/bootstrap5-toggle.jquery.min.js';
 
     /**
      * Twitter Bootstrap switch.
