@@ -1,6 +1,10 @@
 php-vitexsoftware-ease-bootstrap5-widgets (1.4.1) UNRELEASED; urgency=medium
 
   * minimal version is php81
+  * Added LangSelect widget - Bootstrap 5 dropdown-based language selector
+  * Added LangLinks widget - Bootstrap 5 navigation-style language selector
+  * Added examples demonstrating language selector widgets
+  * Updated documentation for new widgets
 
  -- vitex <info@vitexsoftware.cz>  Tue, 08 Apr 2025 19:41:13 +0200
 
