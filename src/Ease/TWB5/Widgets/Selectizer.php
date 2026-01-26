@@ -25,8 +25,8 @@ trait Selectizer
     /**
      * Selectize.js for Ease Input/Select widgets.
      *
-     * @param array<string,string> $settings see https://github.com/selectize/selectize.js/blob/master/docs/api.md
-     * @param array<string,string> $values   [value=>label,value=>label,...]
+     * @param array<string, string> $settings see https://github.com/selectize/selectize.js/blob/master/docs/api.md
+     * @param array<string, string> $values   [value=>label,value=>label,...]
      */
     public function selectize(array $settings = [], array $values = []): self
     {

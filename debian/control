@@ -9,7 +9,7 @@ Homepage: https://github.com/Vitexus/php-ease-bootstrap5-widgets
 
 Package: php-vitexsoftware-ease-bootstrap5-widgets
 Conflicts: php-ease-bootstrap5-widgets
-Depends: ${misc:Depends},php-vitexsoftware-ease-bootstrap5
+Depends: ${misc:Depends}, php-vitexsoftware-ease-bootstrap5
 Architecture: all
 Section: web
 Priority: optional
