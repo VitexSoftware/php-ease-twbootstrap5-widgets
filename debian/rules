@@ -24,6 +24,8 @@ override_dh_install:
 		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
 	sed -i "s|: 'unknown'|: '$(PKG_SOURCE)'|" \\
 		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
+	sed -i "s|: '0.0.0'|: '$(PKG_VERSION)'|" \\
+		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
 	sed -i "2a defined('APP_VERSION') || define('APP_VERSION', '$(PKG_VERSION)');" \
 		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
 	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap5\/css\/bootstrap5-toggle.min.css\');" -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 
