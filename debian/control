@@ -1,5 +1,5 @@
 Source: php-vitexsoftware-ease-bootstrap5-widgets
-Build-Depends: debhelper (>= 7.0.50~), npm, jq, moreutils, pkg-php-tools, phpab
+Build-Depends: debhelper (>= 7.0.50~), npm, jq, moreutils, pkg-php-tools
 Standards-Version: 4.3.0
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
@@ -9,7 +9,7 @@ Homepage: https://github.com/Vitexus/php-ease-bootstrap5-widgets
 
 Package: php-vitexsoftware-ease-bootstrap5-widgets
 Conflicts: php-ease-bootstrap5-widgets
-Depends: ${misc:Depends}, php-vitexsoftware-ease-bootstrap5
+Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
 Architecture: all
 Section: web
 Priority: optional
