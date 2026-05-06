@@ -17,7 +17,7 @@ override_dh_clean:
 	dh_clean
 
 override_dh_install:
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/composer.json |sponge debian/composer.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  composer.json |sponge debian/tmp/composer.json
 	npm install --prefix tmp bootstrap5-toggle
 	dh_install
 	sed -i "s|: 'unknown'|: '$(PKG_SOURCE)'|" \
