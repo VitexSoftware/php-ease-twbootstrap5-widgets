@@ -14,7 +14,8 @@ override_dh_clean:
 	dh_clean
 
 override_dh_install:
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/composer.json |sponge debian/composer.json
+	mkdir -p debian/tmp
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  composer.json |sponge debian/tmp/composer.json
 	npm install --prefix tmp bootstrap5-toggle
 	dh_install
 	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap5\/css\/bootstrap5-toggle.min.css\');" -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 
