@@ -1,4 +1,4 @@
-![EasePHP TWB5 Widgets Logo](project-logo.png?raw=true "Project Logo")
+![EasePHP TWB5 Widgets Logo](php-vitexsoftware-ease-bootstrap5-widgets.svg?raw=true "Project Logo")
 
 EasePHP Twitter bootstrap5 Widgets
 ==================================

@@ -22,7 +22,7 @@ use Ease\TWB5\Widgets\Selectized;
  */
 class SelectizedTest extends \PHPUnit\Framework\TestCase
 {
-    protected Selectized $object;
+    protected ?Selectized $object = null;
 
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -30,7 +30,7 @@ class SelectizedTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Selectized();
+        $this->object = new Selectized('test');
     }
 
     /**
@@ -60,8 +60,7 @@ class SelectizedTest extends \PHPUnit\Framework\TestCase
      */
     public function testselectize(): void
     {
-        $this->assertEquals('', $this->object->selectize());
-        // Remove the following lines when you implement this test.
+        $this->assertInstanceOf(Selectized::class, $this->object->selectize());
         $this->markTestIncomplete('This test has not been implemented yet.');
     }
 }
