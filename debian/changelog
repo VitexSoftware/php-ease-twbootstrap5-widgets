@@ -1,4 +1,16 @@
-php-vitexsoftware-ease-bootstrap5-widgets (1.4.2) UNRELEASED; urgency=medium
+php-vitexsoftware-ease-bootstrap5-widgets (1.5.0) unstable; urgency=medium
+
+  * feat: add BsIcon widget — Bootstrap Icons <i> tag wrapper (successor to FaIcon)
+  * feat: add LoginForm widget — Bootstrap 5 login form with username/password
+  * feat: add PasswordInputShowHide widget — password field with eye toggle button
+  * fix: replace non-existent Ease\Html\Italic with SpanTag in Selectizer
+  * fix: correct homepage URL in composer.json
+  * tests: add BsIconTest, LoginFormTest, PasswordInputShowHideTest
+  * docs: document new widgets in README
+
+ -- vitex <info@vitexsoftware.cz>  Tue, 03 Jun 2026 12:00:00 +0200
+
+php-vitexsoftware-ease-bootstrap5-widgets (1.4.2) unstable; urgency=medium
 
   * new deb autoload
 

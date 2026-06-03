@@ -20,11 +20,57 @@ Object oriented PHP Framework for easy&fast writing small/middle sized apps.
 Bricks Included
 ===============
 
+* BsIcon - Bootstrap Icons `<i>` tag wrapper
 * Toggle - Bootstrap 5 switch/toggle component
 * Selectizer - Select with search functionality
 * MainPageMenu - Large icon navigation menu
 * LangSelect - Language selector dropdown
 * LangLinks - Language selector navigation links
+* LoginForm - Ready-made Bootstrap 5 login form
+* PasswordInputShowHide - Password field with show/hide toggle button
+
+Bootstrap Icons (BsIcon)
+------------------------
+
+Renders a Bootstrap Icons `<i class="bi bi-{name}">` tag. Drop-in for the removed `FaIcon` class.
+
+```php
+// Pass the icon name (with or without the bi- prefix)
+new \Ease\TWB5\Widgets\BsIcon('house');
+new \Ease\TWB5\Widgets\BsIcon('bi-gear');
+
+// With extra attributes
+new \Ease\TWB5\Widgets\BsIcon('person-circle', ['aria-hidden' => 'true']);
+```
+
+Requires [Bootstrap Icons](https://icons.getbootstrap.com/) CSS to be loaded in the page.
+
+Login Form (LoginForm)
+----------------------
+
+A Bootstrap 5 form with username and password fields ready to submit.
+
+```php
+// Empty form
+$form = new \Ease\TWB5\Widgets\LoginForm();
+
+// Pre-filled username
+$form = new \Ease\TWB5\Widgets\LoginForm('admin');
+
+// Custom action
+$form = new \Ease\TWB5\Widgets\LoginForm(null, null, ['action' => 'login.php']);
+```
+
+Password Input with Show/Hide (PasswordInputShowHide)
+------------------------------------------------------
+
+Password field wrapped in an input-group with a Bootstrap Icons eye toggle button.
+
+```php
+$passwordField = new \Ease\TWB5\Widgets\PasswordInputShowHide('password', _('Password'));
+```
+
+Requires Bootstrap Icons CSS and jQuery.
 
 Bootstrap5 Toggle
 -----------------

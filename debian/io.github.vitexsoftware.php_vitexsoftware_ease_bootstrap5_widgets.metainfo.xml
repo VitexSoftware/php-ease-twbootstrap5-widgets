@@ -5,17 +5,29 @@
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <name>php-vitexsoftware-ease-bootstrap5-widgets</name>
-  <summary>Simple PHP framework TWB5 Widgets</summary>
+  <summary>Bootstrap 5 UI widgets for the EasePHP framework</summary>
   <description>
     <p>
-      Twitter bootstrap5 Widgets for EasePHP Framework
+      A collection of Bootstrap 5 UI widgets for the EasePHP framework,
+      ready to use in PHP web applications.
     </p>
+    <p>Included widgets:</p>
+    <ul>
+      <li>BsIcon — Bootstrap Icons tag wrapper</li>
+      <li>Toggle — Bootstrap 5 switch/toggle input</li>
+      <li>Selectizer — searchable select element</li>
+      <li>MainPageMenu — large-icon navigation menu</li>
+      <li>LangSelect — language selector dropdown</li>
+      <li>LangLinks — language selector navigation links</li>
+      <li>LoginForm — Bootstrap 5 login form</li>
+      <li>PasswordInputShowHide — password field with show/hide toggle</li>
+    </ul>
   </description>
   <categories>
     <category>Utility</category>
   </categories>
-  <url type="homepage">https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi</url>
-  <url type="bugtracker">https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi/issues</url>
+  <url type="homepage">https://github.com/VitexSoftware/php-ease-twbootstrap5-widgets</url>
+  <url type="bugtracker">https://github.com/VitexSoftware/php-ease-twbootstrap5-widgets/issues</url>
   <developer id="cz.vitexsoftware">
     <name>VitexSoftware</name>
   </developer>

@@ -41,7 +41,7 @@
         "ergebnis/php-cs-fixer-config": "^6.61"
     },
     "type": "library",
-    "homepage": "https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi",
+    "homepage": "https://github.com/VitexSoftware/php-ease-twbootstrap5-widgets",
     "license": "MIT",
     "config": {
         "allow-plugins": {
