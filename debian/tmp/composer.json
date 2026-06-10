@@ -1,0 +1,42 @@
+{
+  "name": "vitexsoftware/ease-bootstrap5-widgets",
+  "description": "EasePHP framework addons and code snipplets",
+  "authors": [
+    {
+      "name": "Vítězslav Dvořák",
+      "email": "info@vitexsoftware.cz",
+      "homepage": "http://v.s.cz/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ease\\TWB5\\Widgets\\": "src/Ease/TWB5/Widgets"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Ease\\": "vendor/vitexsoftware/ease-core/tests/src/Ease",
+      "Test\\Ease\\TWB5\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease/TWB5"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "vitexsoftware/ease-twbootstrap5": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "phpstan/phpstan": "*",
+    "friendsofphp/php-cs-fixer": "^3.95",
+    "ergebnis/composer-normalize": "^2.51",
+    "ergebnis/php-cs-fixer-config": "^6.61"
+  },
+  "type": "library",
+  "homepage": "https://github.com/VitexSoftware/php-ease-twbootstrap4-widgets-abraflexi",
+  "license": "MIT",
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    }
+  },
+  "version": "1.4.2"
+}

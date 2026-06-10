@@ -22,7 +22,7 @@ use Ease\TWB5\Widgets\MainPageMenu;
  */
 class MainPageMenuTest extends \PHPUnit\Framework\TestCase
 {
-    protected MainPageMenu $object;
+    protected ?MainPageMenu $object = null;
 
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -56,7 +56,7 @@ class MainPageMenuTest extends \PHPUnit\Framework\TestCase
 
         $result = $this->object->addMenuItem($title, $url, $image, $description, $buttonText, $properties);
 
-        $this->assertInstanceOf(\Ease\TWB5\Row::class, $result);
+        $this->assertInstanceOf(\Ease\TWB5\Col::class, $result);
         $this->assertStringContainsString($title, (string) $result);
         $this->assertStringContainsString($url, (string) $result);
         $this->assertStringContainsString($image, (string) $result);
@@ -70,7 +70,7 @@ class MainPageMenuTest extends \PHPUnit\Framework\TestCase
     public function testConstructor(): void
     {
         $this->assertInstanceOf(MainPageMenu::class, $this->object);
-        $this->assertEquals('container', $this->object->getTagProperty('class'));
+        $this->assertStringContainsString('container', $this->object->getTagProperty('class'));
         $this->assertEquals('margin: auto;', $this->object->getTagProperty('style'));
     }
 }

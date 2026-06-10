@@ -17,14 +17,15 @@ override_dh_clean:
 	dh_clean
 
 override_dh_install:
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/composer.json |sponge debian/composer.json
+	mkdir -p debian/tmp
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  composer.json |sponge debian/tmp/composer.json
 	npm install --prefix tmp bootstrap5-toggle
 	dh_install
-	sed -i "s|: 'unknown'|: '$(PKG_SOURCE)'|" \
+	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" \
 		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
-	sed -i "s|: '0.0.0'|: '$(PKG_VERSION)'|" \
+	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|" \
 		debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/autoload.php
 	sed -e "/includeCss/c\        \$$this->includeCss(\'\/javascript\/bootstrap5\/css\/bootstrap5-toggle.min.css\');" -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 
 	sed -e "/includeJavascript/c\        \$$this->includeJavascript(\'\/javascript\/bootstrap5\/js\/bootstrap5-toggle.jquery.min.js\');"   -i debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/php/EaseTWB5Widgets/Toggle.php 
-
-
+	install -m0755 -d debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/pkg-php-tools/autoloaders
+	echo 'deb ease-core EaseTWB5Widgets/autoload.php' > debian/php-vitexsoftware-ease-bootstrap5-widgets/usr/share/pkg-php-tools/autoloaders/php-vitexsoftware-ease-bootstrap5-widgets

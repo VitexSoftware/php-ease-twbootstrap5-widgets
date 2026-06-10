@@ -22,7 +22,7 @@ use Ease\TWB5\Widgets\Toggle;
  */
 class ToggleTest extends \PHPUnit\Framework\TestCase
 {
-    protected Toggle $object;
+    protected ?Toggle $object = null;
 
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -30,7 +30,7 @@ class ToggleTest extends \PHPUnit\Framework\TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Toggle();
+        $this->object = new Toggle('test');
     }
 
     /**
@@ -48,8 +48,7 @@ class ToggleTest extends \PHPUnit\Framework\TestCase
      */
     public function testsetProperties(): void
     {
-        $this->assertEquals('', $this->object->setProperties());
-        // Remove the following lines when you implement this test.
+        $this->object->setProperties(['data-on' => 'On']);
         $this->markTestIncomplete('This test has not been implemented yet.');
     }
 

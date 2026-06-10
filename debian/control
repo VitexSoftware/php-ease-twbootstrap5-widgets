@@ -8,7 +8,6 @@ Section: devel
 Homepage: https://github.com/Vitexus/php-ease-bootstrap5-widgets
 
 Package: php-vitexsoftware-ease-bootstrap5-widgets
-Conflicts: php-ease-bootstrap5-widgets
 Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
 Architecture: all
 Section: web
