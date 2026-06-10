@@ -52,7 +52,7 @@ class LangSelect extends \Ease\Html\DivTag
         // Create dropdown button - Note: Bootstrap 5 uses data-bs-toggle instead of data-toggle
         $dropdownButton = new \Ease\Html\ButtonTag(
             [
-                new \Ease\Html\Italic(null, ['class' => 'bi bi-globe me-1']), // Bootstrap Icons in BS5
+                new \Ease\Html\EmTag(null, ['class' => 'bi bi-globe me-1']), // Bootstrap Icons in BS5
                 $currentLangName ?: $currentLocale,
             ],
             [
