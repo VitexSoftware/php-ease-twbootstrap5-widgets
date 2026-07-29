@@ -1,3 +1,6 @@
+![Packaging: deb](https://img.shields.io/badge/packaging-.deb-red?logo=debian&logoColor=white)
+
+
 ![EasePHP TWB5 Widgets Logo](php-vitexsoftware-ease-bootstrap5-widgets.svg?raw=true "Project Logo")
 
 EasePHP Twitter bootstrap5 Widgets
